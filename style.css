@@ -7,15 +7,18 @@ body{
     font-size: 18px;
     color: #e5e7eb
 }
-header{
+.main-header{
     background-color: #1f2937;
     width: 100%;
     text-align: center;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    width: 100%;
     font-size: 24px;
     color: #f9faf8
 }
+
+
 #links{
     display: flex;
     justify-content: space-between;
@@ -32,11 +35,59 @@ header{
 #hero-container{
     display: flex;
     width: 100%;
-    height: 200px;
+    height: 400px;
     justify-content: space-evenly;
     align-items: center;
-}
-.hero{
-    height: 10rem;   
+    color: #e5e7eb;
+    gap: 1rem;
+    flex-wrap: wrap;
 }
 
+.left{
+    display: flex;
+    flex-direction: column;
+    text-wrap: wrap;
+}
+.left div{
+    width: 35rem;
+}
+button{
+    width: 100px;
+    background-color: #3882f6;
+    border-style: none;
+    border-radius: 6px;
+    height: 30px;
+    color: #e5e7eb;
+    font-weight: 800;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.carrosel{
+    display: flex;
+    gap: 1rem;
+    height: 500px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.child{
+    border-radius: 16px;
+    border: solid #3882f6 6px;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img{
+    object-fit: scale-down;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;    
+}
